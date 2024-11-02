@@ -1,6 +1,7 @@
 package com.bravebomb.chilidelight;
 
-import com.bravebomb.chilidelight.common.registry.ModItems;
+import com.bravebomb.chilidelight.common.registry.CDBlocks;
+import com.bravebomb.chilidelight.common.registry.CDItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,7 +16,8 @@ public class ChiliDelight implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		ModItems.ITEMS.register();
+		CDBlocks.BLOCKS.register();
+		CDItems.ITEMS.register();
 		System.out.println("ChiliCraft Addon has been initialized!");
 	}
 }
