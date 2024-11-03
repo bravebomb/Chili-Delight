@@ -18,6 +18,9 @@
 		"main": [
 			"com.bravebomb.chilidelight.ChiliDelight"
 		],
+		"client": [
+			"com.bravebomb.chilidelight.client.ChiliDelightClient"
+		],
 		"fabric-datagen": [
 			"com.bravebomb.chilidelight.ChiliDelightDataGenerator"
 		]
