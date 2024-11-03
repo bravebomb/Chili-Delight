@@ -45,13 +45,13 @@ public class CDItems {
     public static Item.Settings bowlFoodItem(FoodComponent food) {
         return (new Item.Settings()).food(food).recipeRemainder(Items.BOWL).maxCount(16);
     }
-    public static Item.Settings bucketFoodItem(FoodComponent food) {
-        return (new Item.Settings()).food(food).recipeRemainder(Items.BUCKET).maxCount(3);
+    public static Item.Settings drinkItem() {
+        return new Item.Settings().recipeRemainder(Items.GLASS_BOTTLE).maxCount(16);
     }
 
     static {
         BEANS = ITEMS.register("beans", () ->
-                new AliasedBlockItem(CDBlocks.Bean_Crop_Block.get(),
+                new AliasedBlockItem(CDBlocks.BEANS_BLOCK.get(),
                 foodItem(CDFoodValues.BEANS).maxCount(64))
         );
 

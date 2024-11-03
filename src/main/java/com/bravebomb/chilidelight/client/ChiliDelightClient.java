@@ -8,5 +8,6 @@ import net.minecraft.client.render.*;
 public class ChiliDelightClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), CDBlocks.BEANS_BLOCK.get());
     }
 }
