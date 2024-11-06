@@ -2,6 +2,6 @@
   "parent": "farmersdelight:block/crop_cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "chilidelight:block/beans_crop_stage1"
+    "cross": "chilidelight:block/beans_crop_stage2"
   }
 }

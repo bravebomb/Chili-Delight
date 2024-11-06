@@ -1,4 +1,5 @@
 package com.bravebomb.chilidelight.common.registry;
+import com.bravebomb.chilidelight.common.item.ChiliItem;
 import com.bravebomb.chilidelight.common.utility.CDFoodValues;
 import com.google.common.collect.Sets;
 import io.github.fabricators_of_create.porting_lib.util.LazyRegistrar;
@@ -52,9 +53,12 @@ public class CDItems {
     static {
         BEANS = ITEMS.register("beans", () ->
                 new AliasedBlockItem(CDBlocks.BEANS_BLOCK.get(),
-                foodItem(CDFoodValues.BEANS).maxCount(64))
+                        foodItem(CDFoodValues.BEANS).maxCount(64))
         );
-
+        CHILI = ITEMS.register("chili", () ->
+                new ChiliItem(CDBlocks.CHILI_BLOCK.get(),
+                        foodItem(CDFoodValues.CHILI).maxCount(64))
+        );
     }
 }
 

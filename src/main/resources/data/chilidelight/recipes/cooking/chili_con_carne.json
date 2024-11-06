@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "chilidelight:beans"
+    },
+    {
+      "item": "farmersdelight:minced_beef"
+    }
+  ],
+  "result": {
+    "item": "minecraft:ink_sac"
+  }
+}

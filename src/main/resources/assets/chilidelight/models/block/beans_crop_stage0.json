@@ -1,7 +1,8 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "farmersdelight:block/crop_cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "crop": "chilidelight:block/beans_crop_stage0"
+    "cross": "chilidelight:block/beans_crop_stage0"
   }
 }
+

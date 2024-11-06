@@ -2,6 +2,7 @@ package com.bravebomb.chilidelight;
 
 import com.bravebomb.chilidelight.common.registry.CDBlocks;
 import com.bravebomb.chilidelight.common.registry.CDItems;
+import com.bravebomb.chilidelight.common.utility.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,8 @@ public class ChiliDelight implements ModInitializer {
 		// Proceed with mild caution.
 		CDBlocks.BLOCKS.register();
 		CDItems.ITEMS.register();
+
+		ModLootTableModifiers.modifyLootTables();
 		System.out.println("ChiliCraft Addon has been initialized!");
 	}
 }
