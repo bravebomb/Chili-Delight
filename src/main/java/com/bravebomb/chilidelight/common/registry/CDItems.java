@@ -32,6 +32,10 @@ public class CDItems {
     //ITEMS
     public static final Supplier<Item> BEANS;
 
+    public static final Supplier<Item> CHILI;
+
+    public static final Supplier<Item> CHILI_POWDER;
+
     public CDItems() {
     }
 
@@ -58,6 +62,10 @@ public class CDItems {
         CHILI = ITEMS.register("chili", () ->
                 new ChiliItem(CDBlocks.CHILI_BLOCK.get(),
                         foodItem(CDFoodValues.CHILI).maxCount(64))
+        );
+        CHILI_POWDER = ITEMS.register("chili_powder", () ->
+                new ChiliItem(CDBlocks.CHILI_BLOCK.get(),
+                        basicItem().maxCount(64))
         );
     }
 }

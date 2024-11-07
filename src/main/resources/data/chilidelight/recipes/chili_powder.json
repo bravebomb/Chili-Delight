@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chilidelight:chili"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "chilidelight:chili_powder"
+  }
+}

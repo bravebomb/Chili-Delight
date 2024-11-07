@@ -16,6 +16,8 @@ public class CDBlocks
 
     public static final Supplier<CropBlock> BEANS_BLOCK;
 
+    public static final Supplier<CropBlock> CHILI_BLOCK;
+
     //public static final Supplier<Block> Test_Block;
 
     public CDBlocks() {
@@ -23,6 +25,9 @@ public class CDBlocks
 
     static {
         BEANS_BLOCK = BLOCKS.register("beans_crop", () ->
+                new BeansBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
+        );
+        CHILI_BLOCK = BLOCKS.register("chili_crop", () ->
                 new BeansBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
         );
 

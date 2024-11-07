@@ -16,6 +16,6 @@ public class ChiliDelightClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ConfigRegistry.registerConfig(MODID, ConfigType.CLIENT, Configuration.CLIENT_CONFIG);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), CDBlocks.BEANS_BLOCK.get());
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), CDBlocks.BEANS_BLOCK.get(), CDBlocks.CHILI_BLOCK.get());
     }
 }

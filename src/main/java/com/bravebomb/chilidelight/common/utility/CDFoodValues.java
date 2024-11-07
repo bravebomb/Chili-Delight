@@ -4,7 +4,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 
-
 public class CDFoodValues {
 
     public static final FoodComponent BEANS = new FoodComponent.Builder()
