@@ -36,6 +36,8 @@ public class CDItems {
 
     public static final Supplier<Item> CHILI_POWDER;
 
+    public static final Supplier<Item> BURNT_CHILI;
+
     public CDItems() {
     }
 
@@ -66,6 +68,9 @@ public class CDItems {
         CHILI_POWDER = ITEMS.register("chili_powder", () ->
                 new ChiliItem(CDBlocks.CHILI_BLOCK.get(),
                         basicItem().maxCount(64))
+        );
+        BURNT_CHILI = ITEMS.register("burnt_chili", () ->
+                new Item(basicItem().maxCount(64))
         );
     }
 }
