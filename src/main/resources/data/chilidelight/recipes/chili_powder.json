@@ -1,13 +1,21 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    {
-      "item": "chilidelight:chili"
+  "key": {
+    "I": {
+      "item": "chilidelight:burnt_chili"
+    },
+    "i": {
+      "item": "minecraft:glass_bottle"
     }
+  },
+  "pattern": [
+    "III",
+    "IiI",
+    "III"
   ],
   "result": {
-    "count": 1,
     "item": "chilidelight:chili_powder"
-  }
+  },
+  "show_notification": true
 }
