@@ -14,4 +14,9 @@ public class CDFoodValues {
             .hunger(1).saturationModifier(0.25f)
             .alwaysEdible()
             .build();
+
+    public static final FoodComponent CHILI_CON_CARNE = new FoodComponent.Builder()
+            .hunger(10).saturationModifier(1f)
+            .alwaysEdible()
+            .build();
 }

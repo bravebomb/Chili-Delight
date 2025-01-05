@@ -8,9 +8,15 @@
     },
     {
       "item": "farmersdelight:minced_beef"
+    },
+    {
+      "item": "chilidelight:tomato_beans"
+    },
+    {
+      "item": "chilidelight:chili_powder"
     }
   ],
   "result": {
-    "item": "minecraft:ink_sac"
+    "item": "chilidelight:chili_con_carne"
   }
 }

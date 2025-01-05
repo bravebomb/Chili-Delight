@@ -18,6 +18,8 @@ public class ModCreativeTabs {
                      entries.add(CDItems.BEANS.get());
                      entries.add(CDItems.CHILI.get());
                      entries.add((CDItems.BURNT_CHILI.get()));
+                     entries.add(CDItems.CHILI_POWDER.get());
+                     entries.add(CDItems.CHILI_CON_CARNE.get());
                  }).build());
 
     public static void initialize() {

@@ -40,6 +40,8 @@ public class CDItems {
 
     public static final Supplier<Item> TOMATO_BEANS;
 
+    public static final Supplier<Item> CHILI_CON_CARNE;
+
     public CDItems() {
     }
 
@@ -75,6 +77,9 @@ public class CDItems {
         );
         TOMATO_BEANS = ITEMS.register("tomato_beans", () ->
                 new Item(basicItem().maxCount(64))
+        );
+        CHILI_CON_CARNE = ITEMS.register("chili_con_carne", () ->
+                new Item(foodItem(CDFoodValues.CHILI_CON_CARNE).maxCount(1))
         );
     }
 }

@@ -24,6 +24,14 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(CDItems.BEANS.get()));
                 tableBuilder.pool(poolBuilder);
             }
+
+            if(GRASS_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .with(ItemEntry.builder(CDItems.CHILI.get()));
+                tableBuilder.pool(poolBuilder);
+            }
         });
     }
 }
